@@ -6,13 +6,13 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Upload files to our database</p>
+    <p>Give me any file, I can tell you its size, try!</p>
     <br>
     <br>
     <div>
-    	<form>
-    		<input type="file" id="file-id" multiple="">
-    		<button type="submit" id="btn-id">Upload</button>
+    	<form action="/upload" method="POST" enctype="multipart/form-data">
+    		<input type="file" id="file-id" name="anyfile" multiple="multiple" />
+    		<input type="submit" name="btn-id" value="Upload" />
     	</form>
     </div>
   </body>
